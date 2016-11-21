@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs -->
+<meta charset="utf-8">
+<title>Bed and Breakfast Single page</title>
+<meta name="description" content="Simple and easy to edit Bed and Breakfast site template">
+<meta name="author" content="">
+
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/skeleton.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/layout.css"/>
+<link rel="stylesheet" href="css/supersized.css"/>
+<link rel="stylesheet" href="css/supersized.shutter.css"/>
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons-->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<a href="index.html" id="close"></a>
+<a href="#" data-reveal-id="gallery-menu" class="nav-gal"></a>
+<!--Arrow Navigation-->
+<a id="prevslide" class="load-item"></a>
+<a id="nextslide" class="load-item"></a>
+<div id="slidecaption" ></div>
+
+<!--Start gallery menu  -->  
+<div id="gallery-menu" class="reveal-modal">
+<a class="close-reveal-modal">&#215;</a>
+	<ul id="galleries">
+        <li><figure><img src="images/patio.jpg" alt=""></figure><h6>Gallery 1</h6>Short descritpion</li>
+        <li><a href="fullscreen_gallery-2.html"><figure><img src="images/parking.jpg" alt=""></figure><h6>Gallery 2</h6>Short descritpion</a></li>
+        <li><a href="fullscreen_gallery-3.html"><figure><img src="images/swimm.jpg" alt=""></figure><h6>Gallery 3</h6>Short descritpion</a></li>
+    </ul>
+</div><!--End gallery menu  -->  
+
+<!-- JS -->
+<script src="js/jquery.reveal.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized.shutter.min.js"></script>
+<script>
+jQuery(function($){
+$.supersized({
+slides :  	[			// Slideshow Images
+{image : 'images/gallery/1.jpg', title : 'Amazing places<span>Lorem ipsum dolor sit amet, lacus <a href="#"> sollicitudin nullam</a>.</span>'},
+{image : 'images/gallery/2.jpg', title : 'Amazing places<span>Lorem ipsum dolor sit amet, lacus.</span>'},
+{image : 'images/gallery/3.jpg', title : 'Amazing places<span>Lorem ipsum dolor sit amet, lacus dictum urna sollicitudin nullam ac.</span>'} // Last has no comma
+]				
+});
+});
+</script>
+</body>
+</html>
